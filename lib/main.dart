@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -43,22 +44,62 @@ class _homeState extends State<home> {
       body: Column(
         children: [
           Container(
-          width: 300,
+            width: 200,
             height: 200,
-            color: Colors.lightBlueAccent,
-            child: Text("zvita..."),
 
+            decoration: BoxDecoration(
+              color: Colors.lightBlueAccent,
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.lightBlue,
+                width: 5,
+
+              )
+            ),
+            child: Center(child: Text("zvita...")),
           ),
           Container(
-            width: 300,
+            width: 200,
             height: 200,
             color: Colors.red,
-            child: Text("rekenmachine....."),
-          ),
+            child:Center(
+              child: Icon(Icons.ac_unit_outlined,
+                color: Colors.green,
+                size: 50,
 
+              ),
+            ) ,
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.purple,
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.amber,
+                  margin: EdgeInsets.all(40),
+                  padding: EdgeInsets.only(left: 20,right: 30,top: 10,bottom: 20),
+                  child: Text(
+                    "SABLE",
+                    style: TextStyle(
+                      color: Colors.lightBlue,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
