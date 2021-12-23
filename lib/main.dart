@@ -42,6 +42,19 @@ class _homeState extends State<home> {
     return Scaffold(
       body: Column(
         children: [
+          Container(
+          width: 300,
+            height: 200,
+            color: Colors.lightBlueAccent,
+            child: Text("zvita..."),
+
+          ),
+          Container(
+            width: 300,
+            height: 200,
+            color: Colors.red,
+            child: Text("rekenmachine....."),
+          ),
 
         ],
       ),
